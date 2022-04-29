@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: See the local pc
-      uses: ls
+      run: ls
