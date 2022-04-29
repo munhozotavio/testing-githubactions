@@ -2,7 +2,7 @@ name: learn-github-actions
 on: [push]
 jobs:
   check-ci-version:
-    if: ${{ contains(github.ref,'ci') && github.ref != 'refs/heads/main' }}
+    if: ${{ contains(github.ref,'rodar') && github.ref != 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - name: List files in the repository
