@@ -12,6 +12,5 @@ jobs:
           node-version: '12'
       - run: node -v
       - name: Install mysql
-        run: sudo apt update
-        run: sudo apt install -y mysql-client 
+        run: sudo apt update & sudo apt install -y mysql-client 
         
