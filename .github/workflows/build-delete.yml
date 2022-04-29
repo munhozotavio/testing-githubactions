@@ -10,7 +10,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '12'
-        run: node -v
+      - run: node -v
       - name: Install mysql
         run: sudo apt update
         run: sudo apt install -y mysql-client 
