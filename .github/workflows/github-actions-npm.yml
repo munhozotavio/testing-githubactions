@@ -1,0 +1,11 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  check-ci-version:
+    if: ${{ contains(github.ref,'ci') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+          
