@@ -6,4 +6,5 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
+          cd ${{ github.workspace }}
           ls
