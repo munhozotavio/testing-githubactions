@@ -4,5 +4,6 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: See the local pc
-      run: ls
+      - name: List files in the repository
+        run: |
+          ls
